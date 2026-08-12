@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Car Rental From Biratnagar | Prem Bahadur Karki</title>
+
+<meta name="description" content="Car rental service from Biratnagar to anywhere in Nepal. 5-seater Suzuki for local rides, airport pickup, family trips and long-distance travel. Contact Prem Bahadur Karki at 9842101406.">
+
+<meta name="keywords" content="car rental Biratnagar, Biratnagar car rental, taxi Biratnagar, Biratnagar airport pickup, Nepal car rental, Biratnagar to Kathmandu car">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="Prem Bahadur Karki">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7f7f7;
+    color:#222;
+}
+
+/* NAVBAR */
+
+header{
+    background:#111;
+    color:white;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:21px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#ffc107;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:22px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#ffc107;
+}
+
+/* HERO */
+
+.hero{
+    min-height:85vh;
+    padding:70px 7%;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.68)),
+    url("car-placeholder.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:700px;
+    color:white;
+}
+
+.badge{
+    display:inline-block;
+    background:#20c997;
+    padding:8px 16px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#ffc107;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.7;
+    color:#eee;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 23px;
+    border-radius:7px;
+    text-decoration:none;
+    font-weight:bold;
+    display:inline-block;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.whatsapp{
+    background:#25d366;
+    color:white;
+}
+
+.call{
+    background:#ffc107;
+    color:#111;
+}
+
+/* COMMON */
+
+section{
+    padding:75px 7%;
+}
+
+.title{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#777;
+    margin-bottom:40px;
+}
+
+/* SERVICES */
+
+.services{
+    background:white;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:30px 20px;
+    text-align:center;
+    border:1px solid #eee;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.6;
+}
+
+/* ABOUT */
+
+.about{
+    display:flex;
+    align-items:center;
+    gap:55px;
+}
+
+.about-image{
+    width:48%;
+    height:350px;
+    border-radius:15px;
+    background:
+    linear-gradient(135deg,#333,#777);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:25px;
+    text-align:center;
+}
+
+.about-text{
+    width:52%;
+}
+
+.about-text h2{
+    font-size:37px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.features{
+    line-height:2;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+/* DESTINATIONS */
+
+.destinations{
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+.destination-list{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.destination{
+    background:#222;
+    padding:13px 20px;
+    border-radius:7px;
+}
+
+/* BOOKING */
+
+.booking{
+    background:#ffc107;
+}
+
+.booking-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.booking-box h2{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.booking-box > p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.submit{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:7px;
+    background:#25d366;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.submit:hover{
+    background:#1da851;
+}
+
+/* CONTACT */
+
+.contact{
+    background:white;
+    text-align:center;
+}
+
+.contact-grid{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.contact-card{
+    width:250px;
+    padding:25px;
+    border:1px solid #eee;
+    border-radius:10px;
+}
+
+.contact-card h3{
+    margin-bottom:10px;
+}
+
+.contact-card p{
+    color:#666;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer span{
+    color:#ffc107;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about{
+        flex-direction:column;
+    }
+
+    .about-image,
+    .about-text{
+        width:100%;
+    }
+}
+
+@media(max-width:600px){
+
+    header{
+        padding:15px 5%;
+    }
+
+    nav a{
+        margin-left:8px;
+        font-size:11px;
+    }
+
+    .hero{
+        padding:60px 5%;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:39px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .about-text h2{
+        font-size:30px;
+    }
+
+    .title{
+        font-size:29px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+    <div class="logo">
+        BIRATNAGAR <span>CAR RENTAL</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Book</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            🚗 Available for Booking
+        </div>
+
+        <h1>
+            Travel From Biratnagar
+            <span>Anywhere in Nepal</span>
+        </h1>
+
+        <p>
+            Comfortable private car rental service
+            for local rides, airport pickup,
+            family trips and long-distance travel.
+        </p>
+
+        <div class="buttons">
+
+            <a class="btn whatsapp"
+               href="https://wa.me/9779842101406"
+               target="_blank">
+                💬 WhatsApp
+            </a>
+
+            <a class="btn call"
+               href="tel:+9779842101406">
+                📞 Call Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+    <h2 class="title">
+        Our Services
+    </h2>
+
+    <p class="subtitle">
+        Comfortable travel with a trusted local driver.
+    </p>
+
+    <div class="service-grid">
+
+        <div class="card">
+            <div class="icon">🚕</div>
+            <h3>Local Rides</h3>
+            <p>
+                Comfortable transportation
+                around Biratnagar.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✈️</div>
+            <h3>Airport Pickup</h3>
+            <p>
+                Convenient airport pickup
+                and drop-off service.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👨‍👩‍👧‍👦</div>
+            <h3>Family Trips</h3>
+            <p>
+                Comfortable private travel
+                for families.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛣️</div>
+            <h3>Long Distance</h3>
+            <p>
+                Travel from Biratnagar
+                to anywhere in Nepal.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about">
+
+    <div class="about-image">
+
+        🚗<br>
+        5-SEATER SUZUKI<br>
+        <small>Car Photo Coming Soon</small>
+
+    </div>
+
+    <div class="about-text">
+
+        <h2>
+            Meet Your Driver
+        </h2>
+
+        <p>
+            <strong>Prem Bahadur Karki</strong>
+            provides private car rental service
+            from Biratnagar to destinations
+            throughout Nepal.
+        </p>
+
+        <p>
+            He is based around
+            <strong>Mahendra Chowk, Biratnagar</strong>
+            and also provides airport pickup
+            and drop-off services.
+        </p>
+
+        <div class="features">
+
+            ✓ 5-Seater Suzuki<br>
+            ✓ Comfortable Private Travel<br>
+            ✓ Local & Long-Distance Trips<br>
+            ✓ Airport Pickup & Drop-off<br>
+            ✓ Family Travel<br>
+            ✓ Service Across Nepal
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DESTINATIONS -->
+
+<section class="destinations">
+
+    <h2 class="title">
+        Travel Anywhere in Nepal
+    </h2>
+
+    <p class="subtitle">
+        Starting from Biratnagar.
+    </p>
+
+    <div class="destination-list">
+
+        <div class="destination">Kathmandu</div>
+        <div class="destination">Pokhara</div>
+        <div class="destination">Dharan</div>
+        <div class="destination">Itahari</div>
+        <div class="destination">Janakpur</div>
+        <div class="destination">Chitwan</div>
+        <div class="destination">Birtamod</div>
+        <div class="destination">Illam</div>
+        <div class="destination">Anywhere in Nepal</div>
+
+    </div>
+
+</section>
+
+
+<!-- BOOKING -->
+
+<section class="booking" id="booking">
+
+    <div class="booking-box">
+
+        <h2>
+            🚗 Book Your Ride
+        </h2>
+
+        <p>
+            Fill in your trip details.
+            Your booking request will open in WhatsApp.
+        </p>
+
+
+        <form id="bookingForm">
+
+            <div class="form-group">
+
+                <label>Your Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>Pickup Location</label>
+
+                    <input
+                        type="text"
+                        id="pickup"
+                        placeholder="e.g. Biratnagar"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Destination</label>
+
+                    <input
+                        type="text"
+                        id="destination"
+                        placeholder="Where are you going?"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>Travel Date</label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Travel Time</label>
+
+                    <input
+                        type="time"
+                        id="time"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Passengers</label>
+
+                <select id="passengers">
+
+                    <option value="1">1 Passenger</option>
+                    <option value="2">2 Passengers</option>
+                    <option value="3">3 Passengers</option>
+                    <option value="4">4 Passengers</option>
+                    <option value="5">5 Passengers</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Additional Message</label>
+
+                <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Any additional information..."></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="submit">
+
+                💬 Send Booking Request on WhatsApp
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <h2 class="title">
+        Contact
+    </h2>
+
+    <p class="subtitle">
+        Contact us for booking and travel information.
+    </p>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <h3>👨‍✈️ Driver</h3>
+
+            <p>
+                Prem Bahadur Karki
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>📍 Location</h3>
+
+            <p>
+                Mahendra Chowk,
+                Biratnagar
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>📞 Phone</h3>
+
+            <p>
+                9842101406
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>🗣️ Language</h3>
+
+            <p>
+                Nepali
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026
+    <span>Biratnagar Car Rental</span>
+    — Prem Bahadur Karki
+
+</footer>
+
+
+<!-- WHATSAPP BOOKING SCRIPT -->
+
+<script>
+
+document.getElementById("bookingForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    const pickup =
+        document.getElementById("pickup").value;
+
+    const destination =
+        document.getElementById("destination").value;
+
+    const date =
+        document.getElementById("date").value;
+
+    const time =
+        document.getElementById("time").value;
+
+    const passengers =
+        document.getElementById("passengers").value;
+
+    const message =
+        document.getElementById("message").value;
+
+
+    const whatsappMessage =
+`🚗 NEW CAR RENTAL BOOKING
+
+👤 Name: ${name}
+
+📍 Pickup: ${pickup}
+
+🏁 Destination: ${destination}
+
+📅 Date: ${date}
+
+⏰ Time: ${time}
+
+👨‍👩‍👧‍👦 Passengers: ${passengers}
+
+📝 Message: ${message || "No additional message"}
+
+Please confirm availability and price.`;
+
+
+    const whatsappURL =
+        "https://wa.me/9779842101406?text="
+        + encodeURIComponent(whatsappMessage);
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+});
+
+</script>
+
+</body>
+</html>
